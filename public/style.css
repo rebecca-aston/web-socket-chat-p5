@@ -1,5 +1,3 @@
-/* Fix user-agent */
-
 * {
   box-sizing: border-box;
 }
@@ -32,9 +30,9 @@ main{
 #gui-container{
   position: fixed;
   top: 0;
-  left: -30%;
+  left: -40%;
   z-index: 100;
-  width: 30%;
+  width: 40%;
   height: 100%;
   padding: 10px;
   box-sizing: border-box;
@@ -84,12 +82,6 @@ html, input {
     sans-serif;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 ul {
   list-style: none;
   word-wrap: break-word;
@@ -113,7 +105,7 @@ ul {
 /* Login Page */
 
 #login.page {
-  background-color: #000;
+  background-color: #000000;
 }
 
 #login.page #login-form{
@@ -129,7 +121,7 @@ ul {
 #login.page #login-form .usernameInput {
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #ffffff;
   outline: none;
   padding-bottom: 15px;
   text-align: center;
@@ -146,7 +138,7 @@ ul {
 }
 
 #login.page .title, #login.page .usernameInput {
-  color: #fff;
+  color: #ffffff;
   font-weight: 100;
 }
 
@@ -157,9 +149,6 @@ ul {
 
 /* Font */
 
-.inputMessage {
-  font-size: 90%;
-}
 
 .log {
   color: gray;
@@ -199,6 +188,7 @@ ul {
 /* Input */
 
 .inputMessage {
+  font-size: 90%;
   border: 10px solid #4b4b4b;
   bottom: 0;
   height: 60px;
@@ -208,4 +198,16 @@ ul {
   position: absolute;
   right: 0;
   width: 100%;
+}
+
+/* Media Queries for responsive design */
+
+/* Custom to match our canvas size */
+@media screen and (max-width: 750px) {
+  /* none for this one so far, but remember you can add them! */
+  
+  #gui-container{
+    left: -80%;
+    width: 80%;
+  }
 }
