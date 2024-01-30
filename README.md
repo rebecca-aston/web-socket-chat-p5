@@ -7,10 +7,10 @@ A simple chat demo for Socket.IO adapted for p5.js
 
 ```
 $ npm install
-$ node app.js
+$ npm run dev
 ```
 
-And point your browser to `http://localhost:9000`. Optionally, specify a port by supplying the `port` variable.
+And point your browser to `http://localhost:4000`. Optionally, specify a port by supplying the `port` variable in app.js.
 
 ## Features
 
